@@ -1,0 +1,89 @@
+
+            #####   ##   ## #####  ###### ##   ## ##    ##   ##
+           ##   ## ##   ## ##   ## ##     ###  ##  ##    ##  ##
+          ##   ##  ##   ## ##   ## ##      ###  ## ##     ####
+         ######   ####### ##   ##  #####   ## # ##  ##     ##
+        ##       ##   ##  ##   ##  ##      ##  ###   ##    ###
+       ##        ##   ##  ##   ##  ##      ##   ##   ##   ## ##
+      ###       ##   ##    #####   ######   ##   ##   ## ##   ###
+
+   PHOnon Excitation by Nuclear resonant Inelastic X-ray scattering
+                  module psvl - version 3.0beta11
+
+
+  Input parameters -->
+   Mass number of resonant isotope :   57
+   Density                         :    9.610 +-  0.030 g/cm^3
+   Adiabatic bulk modulus          :  312.0   +-  0.0 GPa
+   Bulk sound velocity             :    5.698 +-  0.009 km/s
+   Fit function type               :  power law
+
+  Results of selected fits to the partial DOS -->
+      fit range  |  v_D  |  v_P  |  v_S  | shear |  chi^2
+       (meV,nm)  | (m/s) | (m/s) | (m/s) | (GPa) |
+    -------------+-------+-------+-------+-------+---------
+      5.7 - 13.7 |  4432 |  7315 |  3972 | 151.6 |   0.25
+      3.2 -  1.3 |    23 |    17 |    21 |   1.6 |
+      5.7 - 14.2 |  4433 |  7316 |  3973 | 151.7 |   0.23
+      3.2 -  1.3 |    21 |    16 |    20 |   1.5 |
+      5.7 - 14.7 |  4429 |  7312 |  3969 | 151.4 |   0.22
+      3.2 -  1.2 |    20 |    15 |    19 |   1.4 |
+      5.7 - 15.0 |  4429 |  7313 |  3970 | 151.5 |   0.22
+      3.2 -  1.2 |    19 |    15 |    18 |   1.4 |
+      5.7 - 15.5 |  4441 |  7321 |  3980 | 152.3 |   0.23
+      3.2 -  1.1 |    19 |    15 |    18 |   1.4 |
+      5.7 - 16.0 |  4452 |  7329 |  3992 | 153.1 |   0.25
+      3.2 -  1.1 |    19 |    15 |    18 |   1.4 |
+      5.7 - 16.2 |  4454 |  7330 |  3993 | 153.2 |   0.24
+      3.2 -  1.1 |    19 |    14 |    17 |   1.3 |
+      5.7 - 16.7 |  4451 |  7328 |  3990 | 153.0 |   0.24
+      3.2 -  1.0 |    18 |    14 |    17 |   1.3 |
+      5.7 - 17.2 |  4448 |  7326 |  3987 | 152.8 |   0.24
+      3.2 -  1.0 |    17 |    14 |    16 |   1.2 |
+      5.7 - 17.7 |  4457 |  7332 |  3996 | 153.5 |   0.25
+      3.2 -  0.9 |    17 |    13 |    16 |   1.2 |
+      5.7 - 18.0 |  4458 |  7333 |  3997 | 153.5 |   0.24
+      3.2 -  0.9 |    17 |    13 |    16 |   1.2 |
+      5.7 - 18.5 |  4455 |  7331 |  3994 | 153.3 |   0.24
+      3.2 -  0.9 |    16 |    13 |    15 |   1.2 |
+      5.7 - 19.0 |  4445 |  7324 |  3985 | 152.6 |   0.27
+      3.2 -  0.8 |    16 |    13 |    15 |   1.2 |
+      5.7 - 19.2 |  4442 |  7322 |  3982 | 152.4 |   0.27
+      3.2 -  0.8 |    16 |    13 |    15 |   1.2 |
+      5.7 - 19.7 |  4442 |  7321 |  3982 | 152.3 |   0.26
+      3.2 -  0.8 |    16 |    13 |    15 |   1.1 |
+
+  Properties of the Debye sound velocitiy pdf -->
+   Successful fits to the DOS        :   1328
+   Failed fits to the DOS            :     50
+   Number of bins for the pdf        :    237
+   Pdf bin size                      :  0.005 km/s
+   Average Debye sound velocity      :  4.479 km/s
+   Rms of Debye sound velocities     :  0.104 km/s
+   Skewness of pdf                   :  0.121
+   Kurtosis of pdf (=3 for Gaussian) :  9.641
+
+  Debye sound velocity distribution fit -->
+              mean    peak    FWHM   pos.  shapeL shapeR
+               %      s/km    km/s   km/s
+    start:    4.17   11.475  0.104  4.497   1.00   1.00
+    final:    1.43   11.494  0.051  4.497   0.91   0.86
+
+   Debye velocity  :  4.497  +-  0.046 km/s
+   P-wave velocity :  7.359  +-  0.032 km/s
+   S-wave velocity :  4.033  +-  0.043 km/s
+   Shear modulus   :  156.3  +-  3.32  GPa
+
+
+  Created files -->
+
+   Protocol of calculations      : 30GPa_psvl_ptl.txt
+   Velocity fit iterations       : 30GPa_vit.txt
+   Velocity pdf fit iterations   : 30GPa_vdf.txt
+   Pseudo Debye sound velocity   : 30GPa_vel.dat
+   Pseudo Debye sound vel. fits  : 30GPa_vet.dat
+   Chi^2 values of fits          : 30GPa_chi.dat
+   Debye sound velocities        : 30GPa_vld.dat
+   P-wave sound velocities       : 30GPa_vlp.dat
+   S-wave sound velocities       : 30GPa_vls.dat
+   Debye sound velocity pdf      : 30GPa_vma.dat

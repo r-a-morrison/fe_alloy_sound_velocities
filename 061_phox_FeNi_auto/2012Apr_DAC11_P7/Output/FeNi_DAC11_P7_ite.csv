@@ -1,0 +1,12 @@
+Fit results
+,Deviator,background
+value,1.559E-01, 2.58939E+00
+error,0.000E+00, 5.75255E-02
+
+Iteration history
+Deviator,Quality,background,,
+1.212E+00, 2.029E+00, 3.000E+00,  
+1.585E-01, 3.237E-03, 2.610E+00,  
+1.563E-01, 8.285E-04, 2.597E+00,  
+1.559E-01, 4.223E-06, 2.589E+00,  
+1.559E-01,, 2.589E+00,  

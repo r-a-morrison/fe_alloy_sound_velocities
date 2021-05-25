@@ -1,0 +1,47 @@
+
+        |>\    #      #  #I##  #    ##  ##   ##  T##T##  ###I   /<|
+        |>>\   ##    ##   ##   ##   N#  ##   #U    ##     I#   /<<|
+        |>>>\  #M#  ###   ##   ###  ##  #U   ##    ##     ##  /<<<|
+        |~~~~| ## ## #M   I#   ## # ##  ##   ##    T#     ## |~~~~|
+        |>>>/  ##    ##   ##   N#  #N#  U#   ##    ##     #I  \<<<|
+        |>>/   M#    ##   ##   ##   ##   ## U#     ##     ##   \<<|
+        |>/    ##    M#  ###I  #N    #    ###      #T    I###   \<|
+
+                   ##    MINeral physics UTIlities   ##
+                   ##  module SEOS - version 2.0bet  ##
+                   ##      written by W.Sturhahn     ##
+
+                   ##  date 07/11/18  time 14:25:12  ##
+
+
+  Input parameters -->
+
+   Composition formula     : Fe_2
+
+   Temperature     : 5500.0 K
+   Pressure range  :  329.0 to 365.0 GPa
+   Pressure points :     37
+
+   Equation of state type : Vinet
+      Density at 0 GPa      :   8.270 g/cm^3
+      Volume at 0 GPa       :  22.4 A^3
+      Bulk modulus at 0 GPa : 163.4 GPa
+      dK/dP at 0 GPa        :   5.4
+      d^2K/dP^2 at 0 GPa    :  -0.0575 1/GPa
+
+   Reference temperature          : 300.0 K
+   Debye temperature              : 417.0 K
+   Grueneisen parameter           :   2.04
+   Exponent of Grueneisen param.  :   1.00
+
+
+
+  Created files -->
+
+   Protocol of calculations      : 5500K_q_rep/hcpFe_Refit_ptl.txt
+   Volume vs. pressure           : 5500K_q_rep/hcpFe_Refit_vol.dat
+   Density vs. pressure          : 5500K_q_rep/hcpFe_Refit_dns.dat
+   Bulk modulus vs. pressure     : 5500K_q_rep/hcpFe_Refit_bms.dat
+   Pressure deriv. of bulk mod.  : 5500K_q_rep/hcpFe_Refit_bdp.dat
+   Temp. derivative of bulk mod. : 5500K_q_rep/hcpFe_Refit_bdt.dat
+   Seismic velocity vs. pressure : 5500K_q_rep/hcpFe_Refit_smv.dat

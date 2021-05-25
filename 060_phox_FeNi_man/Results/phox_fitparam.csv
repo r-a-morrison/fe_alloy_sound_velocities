@@ -1,0 +1,15 @@
+Date,Index,T,Asymmetry,Background,Normalization,Norm Fixed
+Aug 2011,FeNi_Ambient,300.0,1.15,0.394,2.0,True
+Apr 2012,FeNi_DAC11_P1,300.0,1.02,1.1,8.0,True
+Apr 2012,FeNi_DAC11_P2,300.0,0.97,1.51,19.0,True
+Apr 2012,FeNi_DAC11_P3,300.0,0.96,1.61,12.0,True
+Apr 2012,FeNi_DAC11_P4,300.0,0.93,1.85,1.0,True
+Apr 2012,FeNi_DAC11_P5,300.0,0.99,2.63,6.0,True
+Apr 2012,FeNi_DAC11_P6,300.0,0.97,2.06,6.0,True
+Apr 2012,FeNi_DAC11_P7,300.0,0.98,2.59,-1.0,True
+Apr 2012,FeNi_DAC11_P8,300.0,0.96,3.47,13.0,True
+Apr 2012,FeNi_DAC11_P9,300.0,0.97,1.76,11.0,True
+Oct 2012,FeNi_DAC11_P14,300.0,1.07,2.55,-12.0,True
+Feb 2013,FeNi_DAC14_P1,300.0,1.02,3.15,4.0,True
+Feb 2013,FeNi_DAC14_P2,300.0,1.01,1.99,7.0,True
+Mar 2015,FeNi_Ambient,300.0,0.97,1.21,-3.0,True

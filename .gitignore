@@ -1,0 +1,51 @@
+# This file tells git to not sync binary files. Binary files are a
+# hassle with merge conflicts, and we don't need them on the github
+# repository anyway.
+
+#Ignore trash dotfiles.
+*.DS_store
+
+#Ignore raw data. Too big for Git
+001_NRIXSrawdata/
+
+# Latex intermediate files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.ent
+*.fdb_latexmk
+*.fls
+*.gz
+*.idx
+*.ilg
+*.ind
+*.lof
+*.lot
+*.nlo
+*.log
+*.run.xml
+*.swp
+*.toc
+
+# Non-text based documents (leave pdfs for reference)
+*.ppt*
+*.doc*
+*.xsl*
+*.numbers
+*.pages
+*.key
+*.ai
+
+# iPy code
+*.pyc
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+__pycache__/
+**/__pycache__/
+.cache
+
+# Zips and pickles. Add manually if you really want, since they won't
+# diff well.
+*.zip
+*.pkl

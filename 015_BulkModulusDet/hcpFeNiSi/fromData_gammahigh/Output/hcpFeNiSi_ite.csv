@@ -1,0 +1,16 @@
+Fit results
+,Chi^2,(11) zero-pressure volume (A^3),(12) bulk modulus (GPa),(13) pressure deriv. of bulk mod.
+value,1.001E+00, 2.29524E+01, 1.25184E+02, 6.38279E+00
+error,1.148E-01, 7.07834E-02, 4.36502E+00, 1.15404E-01
+
+Correlation matrix
+,(11) zero-pressure volume (A^3),(12) bulk modulus (GPa),(13) pressure deriv. of bulk mod.
+(11) zero-pressure volume (A^3), 1.00000E+00,-9.92021E-01, 9.57157E-01
+(12) bulk modulus (GPa),-9.92021E-01, 1.00000E+00,-9.84806E-01
+(13) pressure deriv. of bulk mod., 9.57157E-01,-9.84806E-01, 1.00000E+00
+
+Iteration history
+Chi^2,Quality,(11) zero-pressure volume (A^3),,(12) bulk modulus (GPa),,(13) pressure deriv. of bulk mod.,,
+1.002E+00, 2.736E-03, 2.295E+01,  , 1.252E+02,  , 6.380E+00,  
+1.001E+00, 2.318E-07, 2.295E+01,  , 1.252E+02,  , 6.383E+00,  
+  1.00,, 2.295E+01,  , 1.252E+02,  , 6.383E+00,  

@@ -1,0 +1,97 @@
+
+        |>\    #      #  #I##  #    ##  ##   ##  T##T##  ###I   /<|
+        |>>\   ##    ##   ##   ##   N#  ##   #U    ##     I#   /<<|
+        |>>>\  #M#  ###   ##   ###  ##  #U   ##    ##     ##  /<<<|
+        |~~~~| ## ## #M   I#   ## # ##  ##   ##    T#     ## |~~~~|
+        |>>>/  ##    ##   ##   N#  #N#  U#   ##    ##     #I  \<<<|
+        |>>/   M#    ##   ##   ##   ##   ## U#     ##     ##   \<<|
+        |>/    ##    M#  ###I  #N    #    ###      #T    I###   \<|
+
+                   ##    MINeral physics UTIlities   ##
+                   ##  module SEOS - version 2.0bet  ##
+                   ##      written by W.Sturhahn     ##
+
+                   ##  date 01/31/18  time 12:21:36  ##
+
+
+  Input parameters -->
+
+   Composition formula     : Fe_1.82 Ni_0.18
+
+   Measured data from file : "hcpFeNi.csv"
+
+   Temperature     :  300.0 K
+   Pressure range  :    0.0 to 200.0 GPa
+   Pressure points :   2001
+
+   Equation of state type : Vinet
+      Density at 0 GPa      :   8.280 g/cm^3
+      Volume at 0 GPa       :  22.5 A^3
+      Bulk modulus at 0 GPa : 157.5 GPa
+      dK/dP at 0 GPa        :   5.6
+      d^2K/dP^2 at 0 GPa    :  -0.0644 1/GPa
+
+   Reference temperature          : 300.0 K
+   Debye temperature              : 417.0 K
+   Grueneisen parameter           :   1.98
+   Exponent of Grueneisen param.  :   1.00
+
+
+  Fit parameters -->
+
+     |     name                       |   start  |   prior  | prior rms |
+     |--------------------------------+----------+----------+-----------|
+     | (11) zero-pressure volume (A^3 | 2.25E+01 |          |           |
+     | (12) bulk modulus (GPa)        | 1.58E+02 |          |           |
+     | (13) pressure deriv. of bulk m | 5.61E+00 |          |           |
+      ------------------------------------------------------------------
+
+
+  Results --> 
+
+     Normalized Chi^2 value:      1.02 +-   0.10
+     (1 - r^2)             :      0.05 %
+
+     | parameter name           | ## |  value      +- error   | % error |
+     |--------------------------+----+------------------------+---------|
+     | (11) zero-pressure volum |  1 |  2.2505D+01 +- 4.0D-02 |   0.177 |
+     | (12) bulk modulus (GPa)  |  2 |  1.5753D+02 +- 3.8D+00 |   2.396 |
+     | (13) pressure deriv. of  |  3 |  5.6071D+00 +- 1.0D-01 |   1.785 |
+      ------------------------------------------------------------------
+       Error estimates give a 68% confidence interval.
+
+
+   Error correlation matrix -> 
+
+      ## |    1      2      3
+     ----+----------------------
+       1 |    1   -0.983  0.930
+       2 | -0.983    1   -0.979
+       3 |  0.930 -0.979    1  
+
+
+   Smallest eigenvalues of Fisher information matrix -> 
+
+     fixed | none    1    2    3
+    -------+---------------------
+      none |   5   196  708  158
+        1  | 196   196 9872 9914
+        2  | 708  9872  708 9873
+        3  | 158  9914 9873  158
+
+
+   d^2K/dP^2 at 0 GPa :  -0.0643 1/GPa
+
+
+  Created files -->
+
+   Protocol of calculations      : Output/hcpFeNi_ptl.txt
+   List of all iteration steps   : Output/hcpFeNi_ite.csv
+   Volume vs. pressure           : Output/hcpFeNi_vol.dat
+   Volume, reduced to ref. temp. : Output/hcpFeNi_vrd.dat
+   Residuals, normalized         : Output/hcpFeNi_rsd.dat
+   Density vs. pressure          : Output/hcpFeNi_dns.dat
+   Bulk modulus vs. pressure     : Output/hcpFeNi_bms.dat
+   Pressure deriv. of bulk mod.  : Output/hcpFeNi_bdp.dat
+   Temp. derivative of bulk mod. : Output/hcpFeNi_bdt.dat
+   Seismic velocity vs. pressure : Output/hcpFeNi_smv.dat

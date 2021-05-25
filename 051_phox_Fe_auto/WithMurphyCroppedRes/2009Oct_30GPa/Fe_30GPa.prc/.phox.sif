@@ -1,0 +1,18 @@
+% @ background := 3
+% @ inelastic_background := 1
+% @ peak_asymmetry := 1
+Transition energy (keV) :: 14.4125
+Recoil energy (meV) :: 1.956
+Sample temperature (K) :: 300
+Input file name :: hcpFe_27GPa.dat 1 2 3
+Data background :: @background 0 0 0
+Output file prefix :: Fe r s G
+Fit range (meV) :: 5.0 3.0
+Inelastic background :: @inelastic_background
+Asymmetry left/right :: @peak_asymmetry
+Resolution function file :: hcpFe_27GPa.res 1 2 process:0
+Data deconvolution :: no
+FWHM for smoothing (meV) :: 0.5
+fit control: steps, damping, quality :: 30 0.1 0.0001
+Inelastic background :: -1
+Asymmetry left/right :: 1.35

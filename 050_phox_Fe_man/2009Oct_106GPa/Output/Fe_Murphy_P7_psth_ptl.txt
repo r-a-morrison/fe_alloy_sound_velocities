@@ -1,0 +1,35 @@
+
+            #####   ##   ## #####  ###### ##   ## ##    ##   ##
+           ##   ## ##   ## ##   ## ##     ###  ##  ##    ##  ##
+          ##   ##  ##   ## ##   ## ##      ###  ## ##     ####
+         ######   ####### ##   ##  #####   ## # ##  ##     ##
+        ##       ##   ##  ##   ##  ##      ##  ###   ##    ###
+       ##        ##   ##  ##   ##  ##      ##   ##   ##   ## ##
+      ###       ##   ##    #####   ######   ##   ##   ## ##   ###
+
+   PHOnon Excitation by Nuclear resonant Inelastic X-ray scattering
+                  module psth - version 3.0beta8
+
+
+  Input parameters -->
+    Nuclear transition energy   :   14.412 keV
+    Recoil energy of free atom  :    1.956 meV
+    Temperature                 :  300.00 K
+
+  Quantities calculated with the partial DOS -->
+    Lamb-Moessbauer factor      :    0.9038 +-   0.0010
+    kinetic energy              :   15.8172 +-   0.1340 meV/atom
+    mean force constant         :  414.3938 +-   5.2058 N/m
+    specific heat               :    2.3993 +-   0.0175 k_B/atom
+    entropy                     :    2.0140 +-   0.0134 k_B/atom
+    free energy                 :   42.8375 +-   0.5276 meV/atom
+    resilience                  :  247.9618 +-   2.8625 N/m
+    Lamb-Moessbauer temperature : 3366.6294 +-  38.8641 K
+    isotope fractionation       :    3.3551 +-   0.1555 perMille/%
+    high T isotope frac.        :    3.5475 +-   0.0446 perMille/%
+    rms displacement            :    4.3548 +-   0.0230 pm
+    impact displacement         :    4.2725 +-   0.1859 pm
+
+
+  Created files -->
+   Protocol of calculations      : Output/Fe_Murphy_P7_psth_ptl.txt

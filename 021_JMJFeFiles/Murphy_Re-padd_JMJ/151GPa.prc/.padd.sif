@@ -1,0 +1,15 @@
+Operating energy (keV) :: 14.4125
+Sample temperature (K) :: 300
+Lattice constant (A) :: 5.4310196
+Linear thermal expansion (1/K) :: 2.6D-6
+First crystal Miller indices :: 4 0 0 -1
+Second crystal Miller indices :: 10 6 4 1
+Scaling factor for energy :: 1
+Output file prefix :: 151GPa_@N: 
+Comment character for output file :: #
+Fit range (meV) :: 3.0
+Inelastic background :: -1
+Asymmetry left/right :: 1
+Shape coefficient :: 1.6
+Input data format :: ASCII
+Input files :: ../scans/CalTech.<168-178>.dat  a2 A3 D@D: t12 T14 n7 B0

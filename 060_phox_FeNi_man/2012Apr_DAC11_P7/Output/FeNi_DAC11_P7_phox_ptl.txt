@@ -1,0 +1,109 @@
+
+            #####   ##   ## #####  ###### ##   ## ##    ##   ##
+           ##   ## ##   ## ##   ## ##     ###  ##  ##    ##  ##
+          ##   ##  ##   ## ##   ## ##      ###  ## ##     ####
+         ######   ####### ##   ##  #####   ## # ##  ##     ##
+        ##       ##   ##  ##   ##  ##      ##  ###   ##    ###
+       ##        ##   ##  ##   ##  ##      ##   ##   ##   ## ##
+      ###       ##   ##    #####   ######   ##   ##   ## ##   ###
+
+   PHOnon Excitation by Nuclear resonant Inelastic X-ray scattering
+                  module phox - version 3.0beta8
+
+
+ Input parameters -->
+    Nuclear transition energy    :   14.412 keV
+    Recoil energy of free atom   :    1.956 meV
+    Temperature of the material  :  300.00  K
+    Constant background          :    3.00  cnts/channel
+    Normalization correction     :   -1.00  %/100meV
+    Linear E-scale correction    :    0.00  0.1%
+    Quadratic E-scale correction :    0.00  1E-6/meV
+
+ Fit parameters -->
+
+    |     name                       |   start  |   prior  | prior rms |
+    |--------------------------------+----------+----------+-----------|
+    | background                     | 3.00E+00 |          |           |
+     ------------------------------------------------------------------
+
+
+ Results -->
+
+     Deviator value:      0.16 +-   0.14
+
+     | parameter name | ## |  value    +- error   | % err |
+     |----------------+----+----------------------+-------|
+     | background     |  1 |  2.59D+00 +- 5.8D-02 |   2.2 |
+      ----------------------------------------------------
+       Error estimates give a 68% confidence interval.
+
+
+  Fit of the elastic peak -->
+    shape function processed from file
+      peak              :   1.35E+04
+      background        :   0.72
+      valid range (meV) :  -6.66 to 11.21
+    fit range (meV) :  -4.96 to  4.96  centered at  0.04
+              Chi^2    peak   FWHM   pos.  %bgr.  asm.
+    start:   308.18 6.57E+03  1.49  0.036  0.571  0.98
+    final:     0.64 6.49E+03  1.11  0.001  0.578  0.98
+    errors:    0.13 1.69E+02  0.02  0.026  0.080  0.07
+
+    smoothing range (meV) :  -2.943 to  3.015
+
+  Quantities derived directly from the data -->
+    Lamb-Moessbauer factor :   0.8750  +-  0.0019
+    kinetic energy / atom  :  14.9600  +-  0.1695 meV
+    mean force constant    : 307.8331  +- 10.5000 N/m
+
+  Decomposition into n-phonon contributions -->
+    FFT-filter smoothing :  0.50 meV
+
+  Quantities derived after refinement -->
+    Lamb-Moessbauer factor :   0.8750  +-  0.0019
+    kinetic energy / atom  :  15.0651  +-  0.1706 meV
+    mean force constant    : 309.9554  +- 10.5723 N/m
+    isotope fractionation  :   2.4823  +-  0.1980 perMille/%
+    high T isotope frac.   :   2.6534  +-  0.0905 perMille/%
+
+  Consistency tests using the refined data -->
+       tested quantity         %deviation   norm.dev.   status
+    detailed balance         -0.52 +- 0.92    0.57        ok              
+    energy/temp. calib.       0.49 +- 1.10    0.45        ok              
+
+  Consistency tests using the partial DOS -->
+       tested quantity         %deviation   norm.dev.   status
+    negativity of DOS         0.24 +- 0.63    0.38        ok              
+    norm of DOS              -0.03 +- 0.90    0.04        ok              
+    Lamb-Moessbauer factor   -0.01 +- 0.26    0.05        ok              
+    kinetic energy / atom     0.23 +- 1.57    0.14        ok              
+    mean force constant      -0.81 +- 4.57    0.18        ok              
+    rms average --------------------------->  0.20        ok              
+
+  Quantities calculated from the partial DOS -->
+    Lamb-Moessbauer factor        :   0.8749 +-  0.0013
+    kinetic energy                :  15.0990 +-  0.1647 meV/atom
+    mean force constant           : 307.4385 +-  9.4326 N/m
+    Lamb-Moessbauer factor at T=0 :   0.9410 +-  0.0004
+    kinetic energy         at T=0 :   9.0118 +-  0.1354 meV/atom
+    vibrational specific heat     :   2.5369 +-  0.0198 k_B/atom
+    vibrational entropy           :   2.3955 +-  0.0170 k_B/atom
+    resilience                    : 181.3793 +-  2.1000 N/m
+    Lamb-Moessbauer temperature   :   2462.6 +-   28.51 K
+    isotope fractionation         :   2.5217 +-  0.1912 perMille/%
+    high T isotope frac.          :   2.6319 +-  0.0807 perMille/%
+
+
+  Created files -->
+
+   Protocol of calculations      : Output/FeNi_DAC11_P7_phox_ptl.txt
+   List of all iteration steps   : Output/FeNi_DAC11_P7_ite.csv
+   Fitted resolution function    : Output/FeNi_DAC11_P7_rfc.dat
+   Data without elastic peak     : Output/FeNi_DAC11_P7_pst.dat
+   Norm. data w/out elastic peak : Output/FeNi_DAC11_P7_psn.dat
+   one-phonon contribution       : Output/FeNi_DAC11_P7_1ph.dat
+   two-phonon contribution       : Output/FeNi_DAC11_P7_2ph.dat
+   3+ phonon contribution        : Output/FeNi_DAC11_P7_3ph.dat
+   partial phonon DOS            : Output/FeNi_DAC11_P7_dos.dat
+   covariance matrix of DOS      : Output/FeNi_DAC11_P7_cvm.bin

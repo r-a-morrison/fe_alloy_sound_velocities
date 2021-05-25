@@ -1,0 +1,198 @@
+
+            #####   ##   ## #####  ###### ##   ## ##    ##   ##
+           ##   ## ##   ## ##   ## ##     ###  ##  ##    ##  ##
+          ##   ##  ##   ## ##   ## ##      ###  ## ##     ####
+         ######   ####### ##   ##  #####   ## # ##  ##     ##
+        ##       ##   ##  ##   ##  ##      ##  ###   ##    ###
+       ##        ##   ##  ##   ##  ##      ##   ##   ##   ## ##
+      ###       ##   ##    #####   ######   ##   ##   ## ##   ###
+
+   PHOnon Excitation by Nuclear resonant Inelastic X-ray scattering
+                  module padd - version 3.0beta11
+
+
+  Input parameters -->
+    Operating energy             :   14.412 keV
+    Temperature of the material  :  300.00 K
+    Energy shift, output data    :    0.00 meV
+    Linear E-scale correction    :    0.00 0.1%
+    Quadratic E-scale correction :    0.00 1E-6/meV
+    Interpolation method         :  quadratic
+
+  Processing data, file "../scans/CalTech.290.dat" -->
+   Number of data points            :   601
+   Constant data background         : 0.00
+   detector signal                  : col 11
+   1.crystal angle position         : col  2
+   1.crystal angle calibration      : col 12
+   2.crystal angle position         : col  3
+   2.crystal temperature correction : col 14
+   Normalization                    : col  7
+   Peak position                    : col 11
+
+   Fit of the elastic peak -->
+    shape function internal, exponential type
+    fit range (meV) :  -2.99 to  2.99  centered at -9.92
+              Chi^2    peak   FWHM   pos.  %bgr.  asm. shape
+    start:          6.32E+02  1.50 -9.920  0.814  1.00  1.60
+    final:     0.67 6.72E+02  1.08 -9.878  1.106  1.00  1.60
+    errors:    0.18 4.09E+01  0.05  0.026  0.355
+
+  Processing data, file "../scans/CalTech.292.dat" -->
+   Number of data points            :   601
+   Constant data background         : 0.00
+   detector signal                  : col 11
+   1.crystal angle position         : col  2
+   1.crystal angle calibration      : col 12
+   2.crystal angle position         : col  3
+   2.crystal temperature correction : col 14
+   Normalization                    : col  7
+   Peak position                    : col 11
+
+   Fit of the elastic peak -->
+    shape function internal, exponential type
+    fit range (meV) :  -3.00 to  3.00  centered at -9.73
+              Chi^2    peak   FWHM   pos.  %bgr.  asm. shape
+    start:          6.45E+02  1.50 -9.729  0.686  1.00  1.60
+    final:     1.14 6.73E+02  1.12 -9.577  0.765  1.00  1.60
+    errors:    0.23 5.23E+01  0.06  0.034  0.406
+
+  Processing data, file "../scans/CalTech.293.dat" -->
+   Number of data points            :   601
+   Constant data background         : 0.00
+   detector signal                  : col 11
+   1.crystal angle position         : col  2
+   1.crystal angle calibration      : col 12
+   2.crystal angle position         : col  3
+   2.crystal temperature correction : col 14
+   Normalization                    : col  7
+   Peak position                    : col 11
+
+   Fit of the elastic peak -->
+    shape function internal, exponential type
+    fit range (meV) :  -3.00 to  3.00  centered at -9.49
+              Chi^2    peak   FWHM   pos.  %bgr.  asm. shape
+    start:          5.88E+02  1.50 -9.493  1.203  1.00  1.60
+    final:     1.75 6.45E+02  1.13 -9.653  0.852  1.00  1.60
+    errors:    0.29 6.28E+01  0.08  0.044  0.530
+
+  Processing data, file "../scans/CalTech.294.dat" -->
+   Number of data points            :   601
+   Constant data background         : 0.00
+   detector signal                  : col 11
+   1.crystal angle position         : col  2
+   1.crystal angle calibration      : col 12
+   2.crystal angle position         : col  3
+   2.crystal temperature correction : col 14
+   Normalization                    : col  7
+   Peak position                    : col 11
+
+   Fit of the elastic peak -->
+    shape function internal, exponential type
+    fit range (meV) :  -3.00 to  3.00  centered at -9.52
+              Chi^2    peak   FWHM   pos.  %bgr.  asm. shape
+    start:          6.15E+02  1.50 -9.517  0.579  1.00  1.60
+    final:     1.58 6.62E+02  1.11 -9.482  0.560  1.00  1.60
+    errors:    0.27 6.08E+01  0.07  0.040  0.403
+
+  Processing data, file "../scans/CalTech.295.dat" -->
+   Number of data points            :   601
+   Constant data background         : 0.00
+   detector signal                  : col 11
+   1.crystal angle position         : col  2
+   1.crystal angle calibration      : col 12
+   2.crystal angle position         : col  3
+   2.crystal temperature correction : col 14
+   Normalization                    : col  7
+   Peak position                    : col 11
+
+   Fit of the elastic peak -->
+    shape function internal, exponential type
+    fit range (meV) :  -3.00 to  3.00  centered at -9.76
+              Chi^2    peak   FWHM   pos.  %bgr.  asm. shape
+    start:          6.05E+02  1.50 -9.755  0.762  1.00  1.60
+    final:     1.91 6.45E+02  1.12 -9.715  0.767  1.00  1.60
+    errors:    0.30 6.60E+01  0.08  0.045  0.525
+
+  Processing data, file "../scans/CalTech.296.dat" -->
+   Number of data points            :   601
+   Constant data background         : 0.00
+   detector signal                  : col 11
+   1.crystal angle position         : col  2
+   1.crystal angle calibration      : col 12
+   2.crystal angle position         : col  3
+   2.crystal temperature correction : col 14
+   Normalization                    : col  7
+   Peak position                    : col 11
+
+   Fit of the elastic peak -->
+    shape function internal, exponential type
+    fit range (meV) :  -3.00 to  3.00  centered at -9.76
+              Chi^2    peak   FWHM   pos.  %bgr.  asm. shape
+    start:          5.91E+02  1.50 -9.758  1.025  1.00  1.60
+    final:     1.04 6.51E+02  1.10 -9.706  1.040  1.00  1.60
+    errors:    0.22 4.95E+01  0.06  0.033  0.445
+
+  Processing data, file "../scans/CalTech.298.dat" -->
+   Number of data points            :   601
+   Constant data background         : 0.00
+   detector signal                  : col 11
+   1.crystal angle position         : col  2
+   1.crystal angle calibration      : col 12
+   2.crystal angle position         : col  3
+   2.crystal temperature correction : col 14
+   Normalization                    : col  7
+   Peak position                    : col 11
+
+   Fit of the elastic peak -->
+    shape function internal, exponential type
+    fit range (meV) :  -3.00 to  3.00  centered at -9.67
+              Chi^2    peak   FWHM   pos.  %bgr.  asm. shape
+    start:          6.06E+02  1.50 -9.670  0.675  1.00  1.60
+    final:     1.82 6.52E+02  1.08 -9.711  0.757  1.00  1.60
+    errors:    0.29 6.64E+01  0.08  0.043  0.480
+
+  Processing data, file "../scans/CalTech.299.dat" -->
+   Number of data points            :   601
+   Constant data background         : 0.00
+   detector signal                  : col 11
+   1.crystal angle position         : col  2
+   1.crystal angle calibration      : col 12
+   2.crystal angle position         : col  3
+   2.crystal temperature correction : col 14
+   Normalization                    : col  7
+   Peak position                    : col 11
+
+   Fit of the elastic peak -->
+    shape function internal, exponential type
+    fit range (meV) :  -3.00 to  3.00  centered at -9.99
+              Chi^2    peak   FWHM   pos.  %bgr.  asm. shape
+    start:          3.59E+02  1.50 -9.988  0.261  1.00  1.60
+    final:     1.68 3.86E+02  1.08 -9.987  0.666  1.00  1.60
+    errors:    0.28 4.83E+01  0.09  0.054  0.601
+
+  Retraced peak position from file "...scans/CalTech.290.dat" -->
+    1.crystal goniometer position      10935.843
+    1.crystal temperature                299.251
+    2.crystal goniometer position     -16365.306
+    2.crystal temperature                299.889
+
+  Results of spectra addition -->
+    %imbalance      range (meV)     counts    %drift   file
+    -3.0 +- 3.0    -64.6   85.0    2092   22   0.34   ../scans/CalTech.290.dat
+    -0.6 +- 3.0    -65.1   84.8    2170   26   0.28   ../scans/CalTech.292.dat
+     6.1 +- 3.2    -65.1   84.9    2136   22   0.78   ../scans/CalTech.293.dat
+    -0.0 +- 3.1    -65.3   84.7    2071   19   0.60   ../scans/CalTech.294.dat
+    -0.9 +- 3.0    -65.1   85.0    2155   20   0.55   ../scans/CalTech.295.dat
+     0.7 +- 3.1    -65.1   85.0    2122   21   0.46   ../scans/CalTech.296.dat
+     4.3 +- 3.4    -64.9   85.0    1910   18   0.37   ../scans/CalTech.298.dat
+     6.5 +- 4.1    -64.8   85.3    1229   13   0.54   ../scans/CalTech.299.dat
+     1.3 +- 1.1    -64.6   84.5   15884  129   0.51   69GPa_NRIXS_sum.dat
+
+
+  Created files -->
+
+   Protocol of calculations      : 69GPa_NRIXS_padd_ptl.txt
+   Normalization functions       : 69GPa_NRIXS_nrm.dat
+   Spectra with peaks at E=0     : 69GPa_NRIXS_shf.dat
+   Sum of spectra w/ peak at E=0 : 69GPa_NRIXS_sum.dat

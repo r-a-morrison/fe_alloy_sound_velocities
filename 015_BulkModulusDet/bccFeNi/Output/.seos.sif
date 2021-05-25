@@ -1,0 +1,17 @@
+% @ fitvar_11 := 23.6342
+% @ fitvar_12 := 157
+% @ fitvar_13 := 5.3
+unit cell formula :: Fe{1.80558}Ni{0.19442}
+data file name :: bccFeNi_Comb.dat P1 V2 p3 v4
+output file prefix :: ResultsV/bccFeNi c l m t h i p 
+temperatures (K) :: 300
+pressure (GPa) :: 0 20 201
+reference temperature (K) :: 300
+Debye temperature at V_0 (K) :: 417
+Grueneisen parameter at V_0 :: 1.875
+Grueneisen exponent :: 1
+EOS type :: vinet
+volume at p=0 (A^3) :: @fitvar_11
+K at p=0 (GPa) :: @fitvar_12
+K' at p=0 :: @fitvar_13
+fit control: steps, damping, quality :: 30 0 0.001

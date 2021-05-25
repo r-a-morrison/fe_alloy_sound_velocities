@@ -1,0 +1,14 @@
+% @ Debye_velocity_scaling := 0.01
+Resonant isotope mass :: 57
+Pressure (GPa) :: 0
+EOS type :: bm
+Density (g/cm^3) :: 9.61 0.03
+Adiabatic bulk modulus (GPa) :: 312 0
+Bulk modulus deriv. :: 4
+Fit window start (meV) :: 6 5
+Fit window width (meV) :: 8 14 15
+parameter p1; start value; option :: @Debye_velocity_scaling
+parameter p2; start value; option :: 4
+DOS input file name :: 30GPa_dos.dat 1 2 3
+Output file prefix, option :: 30GPa G
+Fit function type :: power_law

@@ -1,0 +1,68 @@
+@@PHOENIX 3.0beta8 project file; created by Ulexite on 01/23/2018 at 16:20:13
+~/Desktop/Research/FeAlloySoundVelocities/050_phoxAnalysis_Fe/30GPa/Fe_30GPa.prc
+padd phox psvl psth
+phox
+
+@@padd
+Operating energy (keV) :: 14.4125
+Sample temperature (K) :: 300
+Lattice constant (A) :: 5.4310196
+Linear thermal expansion (1/K) :: 2.6D-6
+First crystal Miller indices :: 4 0 0 1
+Second crystal Miller indices :: 10 6 4 1
+Scaling factor for energy :: 1
+Output file prefix :: Fe G
+Comment character for output file :: #
+Fit range (meV) :: 3.0
+Inelastic background :: -1
+Asymmetry left/right :: 1.35
+Shape coefficient :: 1.6
+Input data format :: ASCII
+Input files :: scan<12-21>.raw a2 A3 D11 t12 T14 M7 B0.2
+mpadd settings :: &&mpadd no 9 NFS 11 NRIXS
+@@phox
+% @ background := 3
+% @ inelastic_background := 1
+% @ peak_asymmetry := 1
+Transition energy (keV) :: 14.4125
+Recoil energy (meV) :: 1.956
+Sample temperature (K) :: 300
+Input file name :: hcpFe_27GPa.dat 1 2 3
+Data background :: @background 0 0 0
+Output file prefix :: Fe r s G
+Fit range (meV) :: 2.5 1.5
+Inelastic background :: @inelastic_background
+Asymmetry left/right :: @peak_asymmetry
+Resolution function file :: hcpFe_27GPa.res 1 2 process:0
+Data deconvolution :: no
+FWHM for smoothing (meV) :: 0
+fit control: steps, damping, quality :: 30 0 0.001
+Inelastic background :: -1
+Asymmetry left/right :: 1.35
+@@psvl
+% @ Debye_velocity_scaling := 0.01
+% @ Debye_velocity_exponent := 0.001
+Resonant isotope mass :: 57
+Pressure (GPa) :: 0
+EOS type :: bm
+Density (g/cm^3) :: 11.06 0.02
+Adiabatic bulk modulus (GPa) :: 558 5
+Bulk modulus deriv. :: 4
+Fit window start (meV) :: 4.4
+Fit window width (meV) :: 7.1 25.6 10
+parameter p1; start value; option :: @Debye_velocity_scaling
+parameter p2; start value; option :: @Debye_velocity_exponent
+DOS input file name :: Fe_dos.dat 1 2 3
+Output file prefix, option :: Fe G
+Fit function type :: polynomial
+@@psth
+Transition energy (keV) :: 14.4125
+Recoil energy (meV) :: 1.956
+DOS input file name :: Fe_dos.dat 1 2 3
+Temperatures (K) :: 200 2000 200
+Energy range (meV) :: -100 100 1001
+Output file prefix :: FeCal e f h i G
+FWHM (meV) :: 1
+Shape coefficient :: 1.7
+Asymmetry left/right :: 1
+Peak strength :: 0.2

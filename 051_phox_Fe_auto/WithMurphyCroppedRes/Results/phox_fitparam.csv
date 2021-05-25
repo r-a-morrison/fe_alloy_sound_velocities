@@ -1,0 +1,13 @@
+Date,Index,T,Asymmetry,Background,Normalization,Norm Fixed
+Oct 2009,Fe_Murphy_P7,300.0,0.98,4.91,-11.6,False
+Oct 2009,Fe_Murphy_P8,300.0,1.0,6.0,-14.3,False
+Oct 2009,Fe_Murphy_P9,300.0,0.96,1.86,-5.0,True
+Oct 2009,Fe_Murphy_P1,300.0,0.98,3.52,0.0,True
+Oct 2009,Fe_Murphy_P2,300.0,0.97,0.841,0.0,True
+Oct 2009,Fe_Murphy_P3,300.0,1.02,2.23,-19.6,False
+Oct 2009,Fe_Murphy_P4,300.0,0.96,2.91,-5.88,False
+Oct 2009,Fe_Murphy_P5,300.0,0.99,3.56,-11.6,False
+Oct 2009,Fe_Murphy_P6,300.0,1.03,7.83,-11.8,False
+Aug 2010,Fe_Murphy_P10,300.0,1.0,5.5,12.7,False
+Feb 2011,Fe_Murphy_P11,300.0,0.93,2.32,5.0,True
+Mar 2015,Fe_Ambient,300.0,1.0,0.487,5.67,False

@@ -1,0 +1,162 @@
+*
+*    Standard input file of module PHOX
+*      
+************************************************************************
+*  
+*    Lines which first character is an asterisk (*) are
+*    supposed to be comments and can occur anywhere
+*    in the input stream.
+*
+*    Lines which first character is the char. (@)
+*    will be interpreted as commands. They must match a
+*    simple pattern :
+*
+*      @ variable_name := string
+*    
+*    In the following input stream @variable_name will 
+*    be substituted by string. variable_name may be up
+*    to 8 chars long. Continuation lines are not allowed.
+*
+*    Every valid input line (begins not with *) looks like
+*          <comment> :: <data> :: <comment>
+*    or like
+*          <comment> :: <data>
+*    and <data> is read by PHOX with free format.
+*
+*
+************************************************************************
+*
+*  general information
+*  ===================
+*
+ (1) transition energy / keV ::  14.4125
+ (2) recoil energy     / meV ::   1.956
+*
+************************************************************************
+*
+*  input data specific information
+*  ===============================
+*
+ (3.1) sample temperature / K  :: 300
+*
+*   syntax of data field :
+*      <file name> <column for energy> <column for counts>
+*
+ (3.2) input data file name    :: hcpFe_107GPa.dat 1 2 3
+*
+*   background contribution in each input bin. Specify either
+*    the value or 'auto <num>' to have phox calculate this number
+*    from the first <num> bins on the low energy side.
+*
+ (3.3) overall data background :: 5.1  -7
+*
+*****************************************
+*
+*  output data specific information
+*  ================================
+*
+*   syntax of data field :
+*
+*      <prefix> <print_options>
+*
+*   The value of <prefix> is used as prefix to generate the
+*   names of output files.
+*   The string <print_options> consists of a list of strings
+*   separated by spaces. The first character of each substring
+*   selects a print options according to the following table
+*
+*   option        file content                    file name
+*
+*    d,D  :  phonon density of states            <prefix>.dos
+*    e,E  :  vibrational entropy vs. temperature <prefix>.etp
+*    f,F  :  recoilless fraction vs. temperature <prefix>.flm
+*    g,G  :  free energy vs. temperature         <prefix>.fre
+*    h,H  :  specific heat c_V vs. temperature   <prefix>.cvt
+*    k,K  :  kinetic energy vs. temperature      <prefix>.ket
+*    n,N  :  normalized data after peak removal  <prefix>.psn
+*    p,P  :  protocol of program execution       <prefix>.ptl
+*    r,R  :  fitted resolution function          <prefix>.rfc
+*    s,S  :  input data after peak removal       <prefix>.pst
+*    t,T  :  time-dep. displacement              <prefix>.dyn
+*    v,V  :  phonon group velocity               <prefix>.vel(t)
+*    1    :  one-phonon part of input data       <prefix>.1ph
+*    2    :  two-phonon part of input data       <prefix>.2ph
+*    3    :  three-phonon part of input data     <prefix>.3ph
+*
+ (3.4) prefix,print options:: hcpFe_107GPa P d n p r s k  1 2 3 g
+*
+******************************************
+*
+*  Fit of the elastic peak
+*  =======================
+*
+*   (3.5) :  the elastic peak will be fitted in a range of
+*             plus/minus this value relativ to peak position.
+*
+*   (3.6) :  this is the value of the inelastic contribution
+*             under the elastic peak. If a negative value is
+*             specified the program will fit the parameter
+*
+*   (3.7) :  the left/right asymmetry of the fitted function
+*
+*   (3.8) :  number or file name,
+*
+*           #file name: file containes data describing the
+*            shape of the elastic peak in 2-column format,
+*            energy range should cover the fitted range,
+*            input field (3.5). The symmetry of the shape
+*            can be modified using input field (3.7). A
+*            Debye-like inelastic background is assumed.
+*
+*           #number: determines the shape of the internally
+*            generated function that is fit to the elastic
+*            peak
+*
+*              R(E) = A1*exp[-((E-A3)/A2L)^A4] + A5*D(E,T) , E<A3
+*              R(E) = A1*exp[-((E-A3)/A2R)^A4] + A5*D(E,T) , E>A3
+*
+*                A1 : peak height           fitted
+*                A2L: peak width (left)     fitted
+*                A2R: peak width (right)    fitted  A2L/A2R=line (3.7)
+*                A3 : peak position         fitted
+*                A4 : shape parameter       fitted  line (3.8)
+*                A5 : background height     fitted  line (3.6)
+*                D  : Debye-like inelastic background function
+*
+*            A4=2 corresponds to a Gaussian, larger
+*            values lead to a more rectangular shape.
+*
+ (3.5) fit range / meV       :: 5 3	
+*first number is range, second number is where you smooth it  (jw) was 6 3 
+ (3.6) inelastic background  :: -1
+ (3.7) asymmetry, left/right :: 1
+ (3.8) shape, 2=Gaussian     :: mono_hcpFe_107GPa.res
+*
+******************************************
+*
+*  Deconvolution of the data
+*  =========================
+*
+*   (3.9) :  whether the data should be deconvoluted, the
+*             error estimates of the output data become
+*             unreliable, i.e., in general too small.
+*
+*   (3.10):  if data is not deconvoluted one value can be
+*             specified, the value gives the FWHM (in meV) of
+*             a Gaussian used to convolute the decomposed data.
+*            if data is deconvoluted two values must be
+*             specified, 1.value gives the fraction of FT spectrum
+*             of the data to be used (choose largest reasonable
+*             value), 2.value gives power coefficient for filter
+*             function applied to selected data window, a larger
+*             value leads to a more rectangular filter function.
+*
+ (3.9)  deconvolute data   :: no
+ (3.10) filter parameters  :: 0.5
+*
+************************************************************************
+*
+
+
+
+

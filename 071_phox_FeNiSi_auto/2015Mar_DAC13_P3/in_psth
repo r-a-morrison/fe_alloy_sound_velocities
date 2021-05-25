@@ -1,0 +1,104 @@
+*
+************************************************************************
+*  
+*    Standard input file of module PSTH
+*
+*    Read the User Manual for information on input parameters.
+*
+************************************************************************
+*
+*  general information
+*  ===================
+*
+ (1) transition energy / keV ::  14.4125
+ (2) recoil energy     / meV ::   1.956
+*
+************************************************************************
+*
+*  input data specific information
+*  ===============================
+*
+*   syntax of data field :
+*     <file name> <column energy> <column counts> <column errors>
+*
+ (3) input data file name    :: Output/FeNiSi_DAC13_P3_dos.dat 1 2 3
+*
+************************************************************************
+*
+*  output data specific information
+*  ================================
+*
+ (4) temperature range / K; points ::  300
+ (5) energy range / meV; points    :: -100 100 1001
+*
+*   syntax of data field :
+*
+*      <pfx> <print_options>
+*
+*   The value of <pfx> is used as prefix to generate the
+*    names of output files.
+*   The string <print_options> consists of a list of characters
+*    separated by spaces.
+*   The extension <ext> is 'csv' for comma-separated data
+*    if ',' is in the list or 'dat' otherwise.
+*
+*   option        file content                    file name
+*
+*    e,E  :  vibrational entropy                 <pfx>_etp.<ext>
+*            free energy                         <pfx>_fre.<ext>
+*            kinetic energy                      <pfx>_ket.<ext>
+*    f,F  :  recoilless fraction                 <pfx>_flm.<ext>
+*    h,H  :  specific heat c_V                   <pfx>_cvt.<ext>
+*    i,I  :  isotopic fractionation              <pfx>_iso.<ext>
+*                                                <pfx>_isf.<ext>
+*    t,T  :  time-dep. displacement              <pfx>_dyn.<ext>
+*    s,S  :  phonon excitation probabilities     <pfx>_psn.<ext>
+*                                                <pfx>_snp.<ext>
+*    x,X  :  n-phonon contributions              <pfx>_mpc.<ext>
+*
+*    g,G  :  add headers for Grace plotting program
+*    ,    :  produce comma-separated value files, extension 'csv'
+*
+ (6) prefix, print options :: Output/FeNiSi_DAC13_P3  e f h i G
+*
+************************************************************************
+*
+*  resolution function
+*  ===================
+*
+*   (7) :  the width of the resolution function at half maximum;
+*           a value less than 0.01 disables resolution function
+*           and elastic peak generation.
+*
+*   (8) :  the left/right asymmetry of the resolution function
+*
+*   (9) :  determines the shape of the resolution function
+*            and the elastic peak
+*
+*              R(E) = exp[-(E/A2L)^A1]  for E<0
+*              R(E) = exp[-(E/A2R)^A1]  for E>0
+*
+*                E    : energy
+*                FWHM : total peak width    line (7)
+*                A1   : shape parameter     line (8)
+*                ASY  : asymmetry factor    line (9)
+*
+*                A2L = FWHM/(1+ASY)*(ln2)^(-1/A1) : peak width (left) 
+*                A2R = A2L*ASY                    : peak width (right)
+*
+*            A2=2 corresponds to a Gaussian, larger
+*            values lead to a more rectangular shape.
+*
+ (7) FWHM / meV            :: 1
+ (8) shape, 2=Gaussian     :: 1.7
+ (9) asymmetry, left/right :: 1
+*
+************************************************************************
+*
+*  elastic peak
+*  ============
+*
+ (10) peak strength :: 0.2
+*
+************************************************************************
+*

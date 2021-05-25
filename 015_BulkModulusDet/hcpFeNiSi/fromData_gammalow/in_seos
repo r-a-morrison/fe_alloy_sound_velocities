@@ -1,0 +1,82 @@
+*
+************************************************************************
+*
+*    Standard input file of module SEOS
+*
+*    Read the User Manual for information on input parameters.
+*
+************************************************************************
+*
+  (1) unit formula :: Fe{1.6}Ni{0.2}Si{0.2}
+*
+  (2) input p-V file; name; type :: hcpFeNiSi.csv P1 V2 T3 p4 v5 t6
+*
+*******************************************************
+*
+*  output data specific information
+*  ================================
+*
+*   syntax of data field :
+*
+*      <prefix> <print_options>
+*
+*   The value of <prefix> is used as prefix to generate the
+*   names of output files.
+*   The string <print_options> consists of a list of strings
+*   separated by spaces. The first character of each substring
+*   selects a print options according to the following table
+*
+*   option        file content                    file name
+*
+*    a,A  :  volume p-T array                    <prefix>.3D
+*    b,B  :  bulk modulus                        <prefix>.bms
+*            temperature derivative              <prefix>.bdt
+*            seismic velocity                    <prefix>.smv
+*    h,H  :  specific heat at constant volume    <prefix>.ccv
+*    i,I  :  internal energy                     <prefix>.int
+*    l,L  :  error ellipse, par. <n> vers. <n'>  <prefix>p<n>v<n'>.eel
+*    m,M  :  f-F plot of data                    <prefix>.ffm
+*            f-F plot of theory                  <prefix>.fft
+*    p,P  :  thermal pressure                    <prefix>.prt
+*    r,R  :  fit residuals, data - theory        <prefix>.rsd
+*    t,T  :  thermal expansion                   <prefix>.thx
+*    v,V  :  calculated volume                   <prefix>.vol
+*            temperature reduced measured vol.   <prefix>.vrd
+*
+  (3) output file prefix :: Output/hcpFeNiSi  b v
+*
+*******************************************************
+*
+*  calculation range
+*
+  (4) temperature polynomial; T0; a1 ; a2; a3 :: 300
+  (5) pressure (GPa); start; stop; points     :: 0 200 2001
+*
+*******************************************************
+*
+*  thermal properties
+*
+  (6) reference temperature (K)     ::  300
+  (7) Debye temperature at V_0 (K)  ::  417
+*     417 (+-15? = 402, 417, 432)
+  (8) Grueneisen parameter at V_0   ::   1.88
+*     1.98 +- 0.10 = 1.88, 1.98, 2.08
+  (9) Grueneisen parameter exponent ::   0.8
+*     1 +- 0.2 = 0.8, 1.0, 1.2
+*
+*******************************************************
+*
+*  elastic properties
+*
+  (10) EOS type (BM/Vinet/logarithmic) :: Vinet
+*
+%  (11) zero-pressure volume (A^3)    :: 22.952
+*      22.952 +- 0.072 = 22.880, 22.952, 23.024
+%  (12) bulk modulus (GPa)            :: 125.2
+*      125.2 +- 4.6 = 120.6, 125.2, 129.8
+%  (13) pressure deriv. of bulk mod.  :: 6.38
+*      6.38 +- 0.12 = 6.26, 6.38, 6.50
+  (14) reserved for future use ::
+*
+*******************************************************
+*

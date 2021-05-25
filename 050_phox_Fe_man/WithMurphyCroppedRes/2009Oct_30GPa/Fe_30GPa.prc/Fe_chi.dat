@@ -1,0 +1,10 @@
+@page size 600,600
+@view 0.12,0.1,0.97,0.93
+@subtitle "PHOENIX module psvl, 02/02/18 at 14:02:51 -08:00"
+@xaxes scale Normal
+@yaxes scale Normal
+@xaxis label "fit window width (meV)"
+@yaxis label "chi^2 values"
+@type xy
+  1.15000E+01  2.99030E-01
+  1.20000E+01  4.42026E-01

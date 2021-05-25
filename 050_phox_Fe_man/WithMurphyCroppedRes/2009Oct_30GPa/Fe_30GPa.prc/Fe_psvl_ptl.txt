@@ -1,0 +1,45 @@
+
+            #####   ##   ## #####  ###### ##   ## ##    ##   ##
+           ##   ## ##   ## ##   ## ##     ###  ##  ##    ##  ##
+          ##   ##  ##   ## ##   ## ##      ###  ## ##     ####
+         ######   ####### ##   ##  #####   ## # ##  ##     ##
+        ##       ##   ##  ##   ##  ##      ##  ###   ##    ###
+       ##        ##   ##  ##   ##  ##      ##   ##   ##   ## ##
+      ###       ##   ##    #####   ######   ##   ##   ## ##   ###
+
+   PHOnon Excitation by Nuclear resonant Inelastic X-ray scattering
+                  module psvl - version 3.0beta8
+
+
+  Input parameters -->
+   Mass number of resonant isotope :   57
+   Density                         :    9.610 +-  0.030 g/cm^3
+   Adiabatic bulk modulus          :  312.0   +-  2.6 GPa
+   Bulk sound velocity             :    5.698 +-   0.025 km/s
+   Fit function type               :  polynomial
+
+  Results of fits to the partial DOS -->
+      fit range  |  v_D  |  v_P  |  v_S  | shear |  chi^2
+       (meV,nm)  | (m/s) | (m/s) | (m/s) | (GPa) |
+    -------------+-------+-------+-------+-------+---------
+      3.5 - 15.1 |  4333 |  7248 |  3879 | 144.6 |   0.30
+      5.2 -  1.2 |    13 |    21 |    12 |   0.9 |
+      3.5 - 15.6 |  4317 |  7237 |  3865 | 143.5 |   0.44
+      5.1 -  1.1 |    15 |    22 |    14 |   1.1 |
+
+  Meta-analysis of fit results -->
+   Debye velocity  :  4.350 +- 0.018 km/s
+   P-wave velocity :  7.259 +- 0.015 km/s
+   S-wave velocity :  3.895 +- 0.023 km/s
+
+
+  Created files -->
+
+   Protocol of calculations      : Fe_psvl_ptl.txt
+   Velocity fit iterations       : Fe_vit.txt
+   Pseudo Debye sound velocity   : Fe_vel.dat
+   Pseudo Debye sound vel. fits  : Fe_vet.dat
+   Chi^2 values of fits          : Fe_chi.dat
+   Debye sound velocities        : Fe_vld.dat
+   P-wave sound velocities       : Fe_vlp.dat
+   S-wave sound velocities       : Fe_vls.dat

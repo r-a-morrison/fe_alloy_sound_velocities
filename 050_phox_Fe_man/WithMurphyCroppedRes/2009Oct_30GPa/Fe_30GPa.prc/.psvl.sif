@@ -1,0 +1,13 @@
+Resonant isotope mass :: 57
+Pressure (GPa) :: 0
+EOS type :: bm
+Density (g/cm^3) :: 9.61 0.03
+Adiabatic bulk modulus (GPa) :: 312 2.6
+Bulk modulus deriv. :: 4
+Fit window start (meV) :: 3.8
+Fit window width (meV) :: 11.5 12 2
+parameter p1; start value; option :: 1e-7
+parameter p2; start value; option :: 1e-7
+DOS input file name :: Fe_dos.dat 1 2 3
+Output file prefix, option :: Fe G
+Fit function type :: polynomial

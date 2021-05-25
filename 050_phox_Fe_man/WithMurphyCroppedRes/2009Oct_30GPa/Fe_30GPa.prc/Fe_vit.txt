@@ -1,0 +1,234 @@
+
+  Fit range  3.5 to 15.1 meV -->
+   Type of fit function        :   1
+   Number of parameters        :   3
+   Number of fit parameters    :   1
+   Number of valid data points :  48
+
+      Chi^2  quality   v_Debye     p1        p2
+       0.32  0.0D+00  4.31D+03  1.00D-07  1.00D-07
+       0.30 -1.3D-02  4.33D+03  1.00D-07  1.00D-07
+       0.30 -9.7D-06  4.33D+03  1.00D-07  1.00D-07
+    +- 0.08           1.28D+01  0.00D+00  0.00D+00
+
+  Fit range  3.5 to 15.6 meV -->
+   Type of fit function        :   1
+   Number of parameters        :   3
+   Number of fit parameters    :   1
+   Number of valid data points :  50
+
+      Chi^2  quality   v_Debye     p1        p2
+       0.45  0.0D+00  4.33D+03  1.00D-07  1.00D-07
+       0.44 -3.7D-03  4.32D+03  1.00D-07  1.00D-07
+       0.44 -8.0D-07  4.32D+03  1.00D-07  1.00D-07
+    +- 0.09           1.51D+01  0.00D+00  0.00D+00
+
+  Fit range  3.5 to  7.2 meV -->
+   Type of fit function        :   1
+   Number of parameters        :   3
+   Number of fit parameters    :   1
+   Number of valid data points :  16
+
+      Chi^2  quality   v_Debye     p1        p2
+       0.16  0.0D+00  4.32D+03  1.00D-07  1.00D-07
+       0.16 -4.8D-04  4.31D+03  1.00D-07  1.00D-07
+    +- 0.10           1.72D+01  0.00D+00  0.00D+00
+
+  Fit range  3.7 to  7.7 meV -->
+   Type of fit function        :   1
+   Number of parameters        :   3
+   Number of fit parameters    :   1
+   Number of valid data points :  17
+
+      Chi^2  quality   v_Debye     p1        p2
+       0.27  0.0D+00  4.31D+03  1.00D-07  1.00D-07
+       0.25 -1.1D-02  4.33D+03  1.00D-07  1.00D-07
+       0.25 -7.3D-06  4.34D+03  1.00D-07  1.00D-07
+    +- 0.13           2.08D+01  0.00D+00  0.00D+00
+
+  Fit range  4.0 to  8.2 meV -->
+   Type of fit function        :   1
+   Number of parameters        :   3
+   Number of fit parameters    :   1
+   Number of valid data points :  18
+
+      Chi^2  quality   v_Debye     p1        p2
+       0.25  0.0D+00  4.34D+03  1.00D-07  1.00D-07
+       0.24 -1.5D-03  4.34D+03  1.00D-07  1.00D-07
+       0.24 -1.4D-07  4.34D+03  1.00D-07  1.00D-07
+    +- 0.12           1.99D+01  0.00D+00  0.00D+00
+
+  Fit range  4.2 to  8.7 meV -->
+   Type of fit function        :   1
+   Number of parameters        :   3
+   Number of fit parameters    :   1
+   Number of valid data points :  19
+
+      Chi^2  quality   v_Debye     p1        p2
+       0.24  0.0D+00  4.34D+03  1.00D-07  1.00D-07
+       0.24 -1.5D-03  4.35D+03  1.00D-07  1.00D-07
+       0.24 -1.3D-07  4.35D+03  1.00D-07  1.00D-07
+    +- 0.12           1.92D+01  0.00D+00  0.00D+00
+
+  Fit range  4.5 to  9.2 meV -->
+   Type of fit function        :   1
+   Number of parameters        :   3
+   Number of fit parameters    :   1
+   Number of valid data points :  20
+
+      Chi^2  quality   v_Debye     p1        p2
+       0.23  0.0D+00  4.35D+03  1.00D-07  1.00D-07
+       0.23 -1.8D-04  4.35D+03  1.00D-07  1.00D-07
+    +- 0.11           1.82D+01  0.00D+00  0.00D+00
+
+  Fit range  4.7 to  9.7 meV -->
+   Type of fit function        :   1
+   Number of parameters        :   3
+   Number of fit parameters    :   1
+   Number of valid data points :  21
+
+      Chi^2  quality   v_Debye     p1        p2
+       0.21  0.0D+00  4.35D+03  1.00D-07  1.00D-07
+       0.21 -5.8D-04  4.35D+03  1.00D-07  1.00D-07
+    +- 0.10           1.66D+01  0.00D+00  0.00D+00
+
+  Fit range  5.0 to 10.2 meV -->
+   Type of fit function        :   1
+   Number of parameters        :   3
+   Number of fit parameters    :   1
+   Number of valid data points :  22
+
+      Chi^2  quality   v_Debye     p1        p2
+       0.26  0.0D+00  4.35D+03  1.00D-07  1.00D-07
+       0.26 -2.2D-03  4.36D+03  1.00D-07  1.00D-07
+       0.26 -3.0D-07  4.36D+03  1.00D-07  1.00D-07
+    +- 0.11           1.79D+01  0.00D+00  0.00D+00
+
+  Fit range  5.2 to 10.7 meV -->
+   Type of fit function        :   1
+   Number of parameters        :   3
+   Number of fit parameters    :   1
+   Number of valid data points :  23
+
+      Chi^2  quality   v_Debye     p1        p2
+       0.30  0.0D+00  4.36D+03  1.00D-07  1.00D-07
+       0.30 -2.2D-03  4.37D+03  1.00D-07  1.00D-07
+       0.30 -2.9D-07  4.37D+03  1.00D-07  1.00D-07
+    +- 0.12           1.91D+01  0.00D+00  0.00D+00
+
+  Fit range  5.4 to 11.1 meV -->
+   Type of fit function        :   1
+   Number of parameters        :   3
+   Number of fit parameters    :   1
+   Number of valid data points :  24
+
+      Chi^2  quality   v_Debye     p1        p2
+       0.27  0.0D+00  4.37D+03  1.00D-07  1.00D-07
+       0.27 -5.9D-04  4.37D+03  1.00D-07  1.00D-07
+    +- 0.11           1.78D+01  0.00D+00  0.00D+00
+
+  Fit range  5.7 to 11.6 meV -->
+   Type of fit function        :   1
+   Number of parameters        :   3
+   Number of fit parameters    :   1
+   Number of valid data points :  25
+
+      Chi^2  quality   v_Debye     p1        p2
+       0.23  0.0D+00  4.37D+03  1.00D-07  1.00D-07
+       0.23 -1.7D-03  4.38D+03  1.00D-07  1.00D-07
+       0.23 -1.8D-07  4.38D+03  1.00D-07  1.00D-07
+    +- 0.10           1.59D+01  0.00D+00  0.00D+00
+
+  Fit range  5.9 to 12.1 meV -->
+   Type of fit function        :   1
+   Number of parameters        :   3
+   Number of fit parameters    :   1
+   Number of valid data points :  26
+
+      Chi^2  quality   v_Debye     p1        p2
+       0.18  0.0D+00  4.38D+03  1.00D-07  1.00D-07
+       0.18 -1.3D-03  4.39D+03  1.00D-07  1.00D-07
+       0.18 -9.6D-08  4.39D+03  1.00D-07  1.00D-07
+    +- 0.08           1.38D+01  0.00D+00  0.00D+00
+
+  Fit range  6.2 to 12.6 meV -->
+   Type of fit function        :   1
+   Number of parameters        :   3
+   Number of fit parameters    :   1
+   Number of valid data points :  27
+
+      Chi^2  quality   v_Debye     p1        p2
+       0.16  0.0D+00  4.39D+03  1.00D-07  1.00D-07
+       0.16 -9.1D-06  4.39D+03  1.00D-07  1.00D-07
+    +- 0.08           1.27D+01  0.00D+00  0.00D+00
+
+  Fit range  6.4 to 13.1 meV -->
+   Type of fit function        :   1
+   Number of parameters        :   3
+   Number of fit parameters    :   1
+   Number of valid data points :  28
+
+      Chi^2  quality   v_Debye     p1        p2
+       0.21  0.0D+00  4.39D+03  1.00D-07  1.00D-07
+       0.21 -2.7D-03  4.38D+03  1.00D-07  1.00D-07
+       0.21 -4.2D-07  4.38D+03  1.00D-07  1.00D-07
+    +- 0.09           1.44D+01  0.00D+00  0.00D+00
+
+  Fit range  6.7 to 13.6 meV -->
+   Type of fit function        :   1
+   Number of parameters        :   3
+   Number of fit parameters    :   1
+   Number of valid data points :  29
+
+      Chi^2  quality   v_Debye     p1        p2
+       0.26  0.0D+00  4.38D+03  1.00D-07  1.00D-07
+       0.26 -2.5D-03  4.37D+03  1.00D-07  1.00D-07
+       0.26 -3.8D-07  4.37D+03  1.00D-07  1.00D-07
+    +- 0.10           1.55D+01  0.00D+00  0.00D+00
+
+  Fit range  6.9 to 14.1 meV -->
+   Type of fit function        :   1
+   Number of parameters        :   3
+   Number of fit parameters    :   1
+   Number of valid data points :  30
+
+      Chi^2  quality   v_Debye     p1        p2
+       0.29  0.0D+00  4.37D+03  1.00D-07  1.00D-07
+       0.29 -1.6D-03  4.36D+03  1.00D-07  1.00D-07
+       0.29 -1.5D-07  4.36D+03  1.00D-07  1.00D-07
+    +- 0.10           1.60D+01  0.00D+00  0.00D+00
+
+  Fit range  7.2 to 14.6 meV -->
+   Type of fit function        :   1
+   Number of parameters        :   3
+   Number of fit parameters    :   1
+   Number of valid data points :  31
+
+      Chi^2  quality   v_Debye     p1        p2
+       0.29  0.0D+00  4.36D+03  1.00D-07  1.00D-07
+       0.29 -3.4D-04  4.36D+03  1.00D-07  1.00D-07
+    +- 0.10           1.56D+01  0.00D+00  0.00D+00
+
+  Fit range  7.4 to 15.1 meV -->
+   Type of fit function        :   1
+   Number of parameters        :   3
+   Number of fit parameters    :   1
+   Number of valid data points :  32
+
+      Chi^2  quality   v_Debye     p1        p2
+       0.37  0.0D+00  4.36D+03  1.00D-07  1.00D-07
+       0.36 -3.8D-03  4.34D+03  1.00D-07  1.00D-07
+       0.36 -8.8D-07  4.34D+03  1.00D-07  1.00D-07
+    +- 0.11           1.70D+01  0.00D+00  0.00D+00
+
+  Fit range  7.7 to 15.6 meV -->
+   Type of fit function        :   1
+   Number of parameters        :   3
+   Number of fit parameters    :   1
+   Number of valid data points :  33
+
+      Chi^2  quality   v_Debye     p1        p2
+       0.60  0.0D+00  4.34D+03  1.00D-07  1.00D-07
+       0.57 -9.1D-03  4.32D+03  1.00D-07  1.00D-07
+       0.57 -4.9D-06  4.31D+03  1.00D-07  1.00D-07
+    +- 0.13           2.06D+01  0.00D+00  0.00D+00

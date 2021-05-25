@@ -1,0 +1,97 @@
+
+        |>\    #      #  #I##  #    ##  ##   ##  T##T##  ###I   /<|
+        |>>\   ##    ##   ##   ##   N#  ##   #U    ##     I#   /<<|
+        |>>>\  #M#  ###   ##   ###  ##  #U   ##    ##     ##  /<<<|
+        |~~~~| ## ## #M   I#   ## # ##  ##   ##    T#     ## |~~~~|
+        |>>>/  ##    ##   ##   N#  #N#  U#   ##    ##     #I  \<<<|
+        |>>/   M#    ##   ##   ##   ##   ## U#     ##     ##   \<<|
+        |>/    ##    M#  ###I  #N    #    ###      #T    I###   \<|
+
+                   ##    MINeral physics UTIlities   ##
+                   ##  module SEOS - version 2.0bet  ##
+                   ##      written by W.Sturhahn     ##
+
+                   ##  date 01/31/18  time 11:30:26  ##
+
+
+  Input parameters -->
+
+   Composition formula     : Fe_2
+
+   Measured data from file : "bccFe_Dewaele_ErrEst.csv"
+
+   Temperature     :  300.0 K
+   Pressure range  :    0.0 to  50.0 GPa
+   Pressure points :    501
+
+   Equation of state type : Vinet
+      Density at 0 GPa      :   7.927 g/cm^3
+      Volume at 0 GPa       :  23.4 A^3
+      Bulk modulus at 0 GPa : 157.0 GPa
+      dK/dP at 0 GPa        :   5.3
+      d^2K/dP^2 at 0 GPa    :  -0.0582 1/GPa
+
+   Reference temperature          : 300.0 K
+   Debye temperature              : 417.0 K
+   Grueneisen parameter           :   1.88
+   Exponent of Grueneisen param.  :   1.00
+
+
+  Fit parameters -->
+
+     |     name                       |   start  |   prior  | prior rms |
+     |--------------------------------+----------+----------+-----------|
+     | (11) zero-pressure volume (A^3 | 2.34E+01 |          |           |
+     | (12) bulk modulus (GPa)        | 1.57E+02 |          |           |
+     | (13) pressure deriv. of bulk m | 5.30E+00 |          |           |
+      ------------------------------------------------------------------
+
+
+  Results --> 
+
+     Normalized Chi^2 value:      1.00 +-   0.38
+     (1 - r^2)             :      0.10 %
+
+     | parameter name           | ## |  value      +- error   | % error |
+     |--------------------------+----+------------------------+---------|
+     | (11) zero-pressure volum |  1 |  2.3524D+01 +- 1.8D-02 |   0.078 |
+     | (12) bulk modulus (GPa)  |  2 |  1.6805D+02 +- 8.3D+00 |   4.929 |
+     | (13) pressure deriv. of  |  3 |  4.7268D+00 +- 1.3D+00 |  27.561 |
+      ------------------------------------------------------------------
+       Error estimates give a 68% confidence interval.
+
+
+   Error correlation matrix -> 
+
+      ## |    1      2      3
+     ----+----------------------
+       1 |    1   -0.816  0.656
+       2 | -0.816    1   -0.959
+       3 |  0.656 -0.959    1  
+
+
+   Smallest eigenvalues of Fisher information matrix -> 
+
+     fixed | none   1   2   3
+    -------+------------------
+      none |   4   14 130  68
+        1  |  14   14 982 986
+        2  | 130  982 130 981
+        3  |  68  986 981  68
+
+
+   d^2K/dP^2 at 0 GPa :  -0.0442 1/GPa
+
+
+  Created files -->
+
+   Protocol of calculations      : Output/bccFe_Dewaele_ptl.txt
+   List of all iteration steps   : Output/bccFe_Dewaele_ite.csv
+   Volume vs. pressure           : Output/bccFe_Dewaele_vol.dat
+   Volume, reduced to ref. temp. : Output/bccFe_Dewaele_vrd.dat
+   Residuals, normalized         : Output/bccFe_Dewaele_rsd.dat
+   Density vs. pressure          : Output/bccFe_Dewaele_dns.dat
+   Bulk modulus vs. pressure     : Output/bccFe_Dewaele_bms.dat
+   Pressure deriv. of bulk mod.  : Output/bccFe_Dewaele_bdp.dat
+   Temp. derivative of bulk mod. : Output/bccFe_Dewaele_bdt.dat
+   Seismic velocity vs. pressure : Output/bccFe_Dewaele_smv.dat

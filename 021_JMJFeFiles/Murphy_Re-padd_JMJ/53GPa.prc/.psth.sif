@@ -1,0 +1,10 @@
+Transition energy (keV) :: 14.4125
+Recoil energy (meV) :: 1.956
+DOS input file name :: 30GPa_dos.dat 1 2 3
+Temperatures (K) :: 200 2000 200
+Energy range (meV) :: -100 100 1001
+Output file prefix :: 30GPa e f h i G
+FWHM (meV) :: 1
+Shape coefficient :: 1.7
+Asymmetry left/right :: 1
+Peak strength :: 0.2

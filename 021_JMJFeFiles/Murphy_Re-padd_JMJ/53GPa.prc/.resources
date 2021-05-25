@@ -1,0 +1,74 @@
+@@PHOENIX 3.0beta11 project file; created by Jennie on 04/17/2018 at 13:03:59
+~/0Projects/0_RachelMorrison/NRIXS/Murphy_FePDOS/53GPa.prc
+padd phox psvl psth
+padd
+Example -- PHOENIX 3.0beta4
+
+The input data files *.raw contain NRIXS scans
+on hcp iron at 90GPa and ambient temperature.
+The data were taken at sector 3-ID
+of the Advanced Photon Source.
+Related publication: Murphy et al., JGR 118 (2013)
+@@padd
+Operating energy (keV) :: 14.4125
+Sample temperature (K) :: 300
+Lattice constant (A) :: 5.4310196
+Linear thermal expansion (1/K) :: 2.6D-6
+First crystal Miller indices :: 4 0 0 -1
+Second crystal Miller indices :: 10 6 4 1
+Scaling factor for energy :: 1
+Output file prefix :: 53GPa 
+Comment character for output file :: #
+Fit range (meV) :: 3.0
+Inelastic background :: -1
+Asymmetry left/right :: 1
+Shape coefficient :: 1.6
+Input data format :: ASCII
+Input files :: scans/CalTech.<209-211>.dat a2 A3 D9 t12 T14 n7 B0
+Input files :: scans/CalTech.<213-215>.dat a2 A3 D9 t12 T14 n7 B0
+Input files :: scans/CalTech.<217-218>.dat a2 A3 D9 t12 T14 n7 B0
+mpadd settings :: &&mpadd yes SMS:9 NRIXS:11
+@@phox
+% @ background := 3
+% @ inelastic_background := 1
+% @ peak_asymmetry := 1
+Transition energy (keV) :: 14.4125
+Recoil energy (meV) :: 1.956
+Sample temperature (K) :: 300
+Input file name :: XGPa_NRIXS_sum.dat 1 2 3
+Data background :: @background 0 0 0
+Output file prefix :: XGPa r s n 1 2 3 a G
+Fit range (meV) :: 5.0 3.0
+Inelastic background :: @inelastic_background
+Asymmetry left/right :: @peak_asymmetry
+Resolution function file :: XGPa_SMS_sum.dat 1 2 process
+Data deconvolution :: no
+FWHM for smoothing (meV) :: 0.5
+fit control: steps, damping, quality :: 20 0.1 0.0001
+mphox parameters :: no min:max min:60 min:70 min:80 min:85 min:90 min:95 min:100 min:105 min:110 min:92.5 min:97.5 min:102.5 min:107.5
+@@psvl
+% @ Debye_velocity_scaling := 0.01
+Resonant isotope mass :: 57
+Pressure (GPa) :: 0
+EOS type :: bm
+Density (g/cm^3) :: 1 0
+Adiabatic bulk modulus (GPa) :: 1 0
+Bulk modulus deriv. :: 4
+Fit window start (meV) :: 6 5
+Fit window width (meV) :: 8 14 15
+parameter p1; start value; option :: @Debye_velocity_scaling
+parameter p2; start value; option :: 4
+DOS input file name :: XGPa_dos.dat 1 2 3
+Output file prefix, option :: XGPa G
+Fit function type :: power_law
+@@psth
+Transition energy (keV) :: 14.4125
+Recoil energy (meV) :: 1.956
+DOS input file name :: XGPa_dos.dat 1 2 3
+Temperatures (K) :: 200 2000 200
+Energy range (meV) :: -100 100 1001
+Output file prefix :: XGPa e f h i G
+FWHM (meV) :: 1
+Shape coefficient :: 1.7
+Asymmetry left/right :: 1
+Peak strength :: 0.2

@@ -1,0 +1,16 @@
+Fit results
+,Deviator,norm,background
+value,8.197E-01, 9.68462E+00, 3.32404E+00
+error,0.000E+00, 3.73280E+00, 6.53126E-01
+
+Correlation matrix
+,norm,background
+norm, 1.00000E+00,-9.58113E-01
+background,-9.58113E-01, 1.00000E+00
+
+Iteration history
+Deviator,Quality,norm,,background,,
+1.478E+00, 1.271E+00, 9.000E+00,  , 3.000E+00,  
+8.208E-01, 1.958E-03, 9.750E+00,  , 3.295E+00,  
+8.198E-01, 9.809E-05, 9.757E+00,  , 3.311E+00,  
+8.197E-01,, 9.685E+00,  , 3.324E+00,  

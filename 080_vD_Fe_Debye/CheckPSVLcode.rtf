@@ -1,0 +1,103 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fnil\fcharset0 Monaco;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red122\green117\blue0;\red217\green11\blue0;\red253\green154\blue0;
+\red230\green87\blue141;\red85\green142\blue40;\red0\green145\blue206;\red133\green0\blue175;}
+\margl1440\margr1440\vieww12920\viewh13640\viewkind0
+\deftab576
+\pard\tx576\pardeftab576\pardirnatural
+
+\f0\fs24 \cf0 \CocoaLigature0 From lesdat.F\
+* export variables :\
+*    NERR    = error code\
+*    XMES    = name of data file, options stripped\
+*    \cf2 KD\cf0       = number of data points\
+*    DMX(*)  = x-values\
+*    DMY(*)  = y-values\
+*    DMDY()  = y-errors^2\
+\
+From bineq1.F\
+* export variables :\
+*    DXN(*)   = x-values, equidistant\
+*    DYN(*)   = interpolated or binned y-values\
+*    N0       = position of x=0 in output array DXN(*)\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f1\fs26 \cf0 \CocoaLigature1 \
+From lespsv.F\
+* export variables :\
+\cf3 *    DMASS      = mass number of resonant isotope\
+\cf0 *    DPRES      = pressure of material (GPa)\
+*    XEOS       = EOS type\
+\cf4 *    DRHO       = sample density at p=0 (g/cm^3)\
+\cf0 *    DDRHO      = error of density\
+*    DKB        = bulk modulus at p=0 (GPa)\
+*    DDKB       = error of bulk modulus\
+*    DKBP       = pressure derivative of bulk mod. at p=0\
+*    DDKBP      = error of bulk modulus derivative\
+*    DWS1       = fit range beginning\
+*    DWW1       = fit range width, start value\
+*    DWW2       = fit range width, end value\
+*    NWW        = number of fit range width values\
+*    XOPT1      = description of fit parameter A1\
+*    XOPT2      = description of fit parameter A2\
+*    XMES       = input file with DOS values\
+*    XOUT       = prefix for output files\
+*    XOPT       = output format options\
+*    NTYPE      = type of fit function\
+\
+From pheonix.h\
+\pard\tx576\pardeftab576\pardirnatural
+
+\f0\fs24 \cf0 \CocoaLigature0 *:  miscellaneous parameters\
+*:  ========================\
+*\
+*:   DRADNG  =  conversion from radian to degree\
+*:   DGNRAD  =  conversion from degree to radian\
+*:   DPIH    =  pi/2\
+*:   \cf5 DPI\cf0      =  pi\
+     +          \cf5 DPI\cf0     = 3.141592653589793D0,\
+*:   D2PI    =  2*pi\
+*:   DLN2    =  ln(2)\
+*:   \cf6 DHQUER\cf0   =  (Planck constant)/2*pi    in units of eV*s\
+     +          \cf6 DHQUER\cf0  = 6.582118890D-16,\
+*:   \cf7 DAMU\cf0     =  atomic mass constant      in units of g\
+     +          \cf7 DAMU\cf0    = 1.66053873D-24,\
+*:   DCLIC   =  speed of light            in units of m/s\
+*:   DMUEK   =  nuclear magneton          in units of eV/T\
+*:   DCER0   =  classical electron radius in units of m\
+*:   DBLTZ   =  Boltzmann constant        in units of meV/K\
+*:   DELCH   =  elementary charge         in units of C\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f1\fs26 \cf0 \CocoaLigature1 \
+Assume:\
+DSX = E\
+DSY = DOS\
+DSDY = dDOS\
+\
+*:  create arrays for Debye sound velocity\
+*:  calculate average phonon energy\
+      DVOL = \cf3 DMASS\cf0 *\cf7 DAMU\cf0 /\cf4 DRHO\cf0 		\
+      \cf8 DN\cf0    = 1.D-4*(DVOL*1.5D0/\cf5 DPI\cf0 **2)**(1.D0/3.D0)/\cf6 DHQUER\cf0 \
+      Do  K = 1,\cf2 KD\cf0 \
+       If(DSY(K).le.0.D0 .or. DSX(K).le.0.D0) Then\
+        DSY(K)  = 0.D0\
+        DSDY(K) = 1.D2\
+       Else\
+        DSDY(K) = DSDY(K)/DSY(K)**2\
+        DSY(K)  = DSY(K)/DSX(K)**2\
+        DSY(K)  = \cf8 DN\cf0 /Dabs(DSY(K))**(1.D0/3.D0)\
+        DSDY(K) = DSY(K)*DSY(K)*DSDY(K)/9.D0\
+       Endif\
+      EndDo\
+\
+coeff = 0.0001*[(mass*amu/rho)*(1.5)/pi^2]^(1/3)/hbar\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 coeff/abs(DOS/E^2)^(1/3)\
+\
+(      0.0001*3*mass              E^2   )  ^ (1/3)\
+(  -------------------------------  * -------  )\
+( 2*pi^2*hbar^3*rho*N_A      DOS  )\
+}

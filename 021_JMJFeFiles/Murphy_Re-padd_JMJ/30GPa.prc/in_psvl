@@ -1,0 +1,76 @@
+*
+************************************************************************
+*
+*    Standard input file of module PSVL
+*
+*    Read the User Manual for information on input parameters.
+*
+************************************************************************
+*
+*  variable assigments
+*  ===================
+*
+% @ Debye_velocity_scaling := 0.01
+*
+*******************************************************
+*
+ (1) Resonant isotope mass :: 57
+ (2) Pressure (GPa) :: 0
+*
+ (3) EOS type :: bm
+ (4) Density (g/cm^3) :: 9.61 0.03
+ (5) Adiabatic bulk modulus (GPa) :: 312 0
+ (6) Bulk modulus deriv. :: 4
+*
+ (7) Fit window start (meV) :: 6 5
+ (8) Fit window width (meV) :: 8 14 15
+*
+*******************************************************
+*
+*  the Debye profile is obtained from the DOS as
+*    {E^2/D(E)}^(1/3) * {(m/rho)*(4pi/h^3)}^(1/3)
+*
+*  the fit function to the Debye profile is specified in line 13
+*
+ (9)  parameter p1; start value; option :: @Debye_velocity_scaling
+ (10) parameter p2; start value; option :: 4
+*
+*******************************************************
+*
+*  input data specific information
+*  ===============================
+*
+*   syntax of data field :
+*      <file name> <energy col.> <values col.> <errors col.>
+*
+ (11) DOS input file name :: 30GPa_dos.dat 1 2 3
+*
+*******************************************************
+*
+*  output data specific information
+*  ================================
+*
+*   two values:
+*      (1) prefix to generate file names
+*      (2) optional:  g,G = add headers for Grace plotting program
+*                     ,   = create comma-separated value files with
+*                               extension 'csv'
+*
+ (12) Output file prefix, option :: 30GPa G
+*
+*******************************************************
+*
+*  fit function
+*  ============
+*
+*   the fit function to the Debye profile is given by
+*    polynomial: F(E) = v_Debye*(1 - (E*p1)^2 - (E*p2)^4)
+*    power_law : F(E) = v_Debye*(1 - (E*p1)^p2)
+*
+*   parameters p1 and p2 are specified in lines 9 and 10
+*   the Debye sound velocity v_Debye is always fitted
+*
+ (13) Fit function type :: power_law
+*
+************************************************************************
+*
