@@ -7,6 +7,8 @@ Morrison, R. A., et al., High pressure thermoelasticity and sound velocities of 
 
 Extensive supplementary information is also available at the above link.
 
+Note: A word of caution. Binary files (.pdf, .ai, etc.) are included for completeness. Normally these should be left out of version control so git doesn't mess these up in merge conflicts. Use at your own risk.
+
 ## Abstract
 The Earth's iron-dominant core is known to contain nickel from cosmochemical analysis and some amount of light elements from geophysical constraints on density and seismic wave velocities. Although there have been several studies to constrain thermoelastic properties of iron-alloys, there has been no systematic study on the effects of nickel and light elements on properties of iron using the same experimental methods and data analysis approach.
 
